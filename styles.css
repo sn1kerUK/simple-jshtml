@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: grow-shrink 2s infinite alternate;
+}
+
+@keyframes grow-shrink {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 26, 255);
+    border-radius: 50%;
+    z-index: -1;
+}

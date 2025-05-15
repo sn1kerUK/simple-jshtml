@@ -6,9 +6,13 @@ fetch('https://catfact.ninja/fact')
   })
   .catch(error => console.error('Error:', error));
 
-  const name = 'Yura';
-  console.log(`Hi, ${name}`);
+const name = 'Yura';
+console.log(`Hi, ${name}`);
 
-   const Element = document.querySelector('.circle-inner');
-   console.log(Element);
-   Element.innerHTML = `<div>${name}</div>`;
+const Element = document.querySelector('.circle-inner');
+console.log(Element);
+Element.innerHTML = `<div>${name}</div>`;
+
+export function helloUserNme(name, surname) {
+  return `Hello, ${name} ${surname}`;
+}
